@@ -1,3 +1,9 @@
 body {
   background: orange;
 }
+
+.btn btn-primary {
+  text-align: center!important;
+  display:block!important;
+
+}
