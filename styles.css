@@ -1,89 +1,52 @@
-/* Code By Alireza Derakhshan */
-* {
+*,
+*::after,
+*::before {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
+
 body {
-  font-family: Arial, Helvetica, sans-serif;
+  background-color: #f2f2f2;
+  font-family: arial;
+  height: 150vh;
 }
-.ham-menu {
-  width: 30px;
-  height: 30px;
-  cursor: pointer;
-}
-.ham-menu span {
-  display: block;
-  width: 30px;
-  height: 5px;
-  background: #fff;
-  margin: 5px 0;
-  border-radius: 10px !important;
-}
-.main-nav {
-  display: none;
-  list-style-type: none;
-}
+
 header {
+  background-color: #fff;
+  position: fixed;
+  width: 100%;
+  padding: 20px 40px;
+
+  transition: all 0.3s linear;
+}
+
+nav {
   display: flex;
   justify-content: space-between;
-  padding: 15px 20px;
   align-items: center;
-  /* background: #654EFE; */
-  background-image: linear-gradient(to right, #654efe,#ff9d4a);
 }
-header h1 {
-  color: #fff;
-  font-size: 1.5rem;
-  cursor: pointer;
-}
-.main-nav a {
-  text-decoration: none;
-  padding: 5px 10px;
-  color: #fff;
+
+nav .logo {
   font-weight: 600;
-  transition: all ease 0.1s;
-  margin-left: 3px;
+  font-size: 2rem;
 }
-.main-nav a:hover {
-  background: #fff;
-  border-radius: 7px;
-  color: #ff9d4a;
+
+nav ul {
+  list-style: none;
+  display: flex;
 }
-.main-nav li:last-child a {
-  background-color: #fff;
-  color: #ff9d4a;
-  border-radius: 7px;
-  box-shadow: 2px 3px 10px 5px #ff9d4a;
+
+nav ul li {
+  font-weight: 600;
+  margin: 0px 14px;
 }
-.main-nav li:last-child a:hover {
-  background-color: #2F4858;
+
+/* Scroll Effect */
+.scrollEffect {
+  background-color: #000;
+}
+
+.scrollEffect nav {
   color: #fff;
-  box-shadow: 0 0 0;
-}
-@media (min-width: 768px) {
-  .ham-menu {
-      display: none;
-  } 
-  .main-nav {
-      display: flex;
-  }
-}
-.me {
-margin:25px;
-text-align: center;
-}
-.me a {
-font-size:15px;
-color: #fff;
-font-weight: 400;
-text-decoration: none;
-background: #010101;
-padding: 10px;
-border-radius: 8px;
-transition: all 0.3s;
-}
-.me a:hover {
-color: #fff;
-background: #FFA200;
-transition: all easy 0.3s;
 }
