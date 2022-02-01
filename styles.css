@@ -25,6 +25,7 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  list-style-type: none;
 }
 
 nav .logo {
@@ -40,6 +41,8 @@ nav ul {
 nav ul li {
   font-weight: 600;
   margin: 0px 14px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
 }
 
 /* Scroll Effect */
